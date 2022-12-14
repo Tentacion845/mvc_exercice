@@ -1,0 +1,182 @@
+.form__group:not(:last-child) {
+  margin-bottom: 2rem; }
+
+.form__input:not(:last-child) {
+  margin-bottom: 5rem; }
+
+.form__input {
+  margin: 0 auto;
+  font-family: inherit;
+  color: inherit;
+  padding: 1.5rem 2rem;
+  display: block;
+  width: 75%;
+  border-radius: 2px;
+  border: none;
+  border-bottom: 3px solid transparent;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: all 0.3s; }
+  .form__input:focus {
+    outline: none;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1); }
+    .form__input:focus:valid {
+      border-bottom: solid 2px #44af69ff; }
+    .form__input:focus:invalid {
+      border-bottom: solid 2px #f8333cff; }
+    .form__input:focus.invalid {
+      border-bottom: solid 2px #f8333cff; }
+
+.btn, .btn:link, .btn:visited {
+  background-color: #eee;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.5rem 2rem;
+  display: inline-block;
+  border-radius: 10rem;
+  transition: all 0.2s;
+  position: relative;
+  font-size: 1.6rem;
+  border: 1px solid rgba(50, 48, 49, 0.2);
+  color: #323031ff; }
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1rem 2rem rgba(50, 48, 49, 0.2);
+  background-color: #323031ff;
+  color: #eee; }
+  .btn:hover::after {
+    transform: scaleX(1.4) scaleY(1.6);
+    opacity: 0; }
+
+.btn:active, .btn:focus {
+  outline: none;
+  transform: translateY(-1px);
+  box-shadow: 0 0.5rem 1rem rgba(50, 48, 49, 0.2); }
+
+.header__textbox {
+  background-color: #e0e2db; }
+
+.navigation__list {
+  list-style: none;
+  text-align: center;
+  width: 100%; }
+
+.navigation__item {
+  display: inline-block; }
+
+.navigation__link:link, .navigation__link:visited {
+  font-size: 3rem;
+  font-weight: 300;
+  padding: 1rem 2rem;
+  color: #fff;
+  text-decoration: none; }
+
+.footer {
+  width: 100%;
+  height: 50%;
+  background-color: #323031ff;
+  padding: 10rem 0;
+  font-size: 1.4rem;
+  display: block; }
+  .footer__list {
+    list-style: none;
+    text-align: center; }
+  .footer__item {
+    display: inline-block;
+    margin: 2rem 0 3rem 0; }
+  .footer__link {
+    position: relative;
+    margin: 0 1rem; }
+    .footer__link:link, .footer__link:visited {
+      color: #fff;
+      text-decoration: none;
+      text-transform: uppercase;
+      display: inline-block;
+      transition: all 0.5s; }
+    .footer__link:hover, .footer__link:active {
+      color: #2b9eb3;
+      transform: rotate(15deg);
+      background-color: #323031ff;
+      z-index: 100; }
+  .footer__copyright {
+    margin: auto;
+    text-align: center;
+    border-top: solid 1px #fff;
+    padding: 2rem;
+    width: 30%;
+    color: #fff; }
+
+.row {
+  max-width: 114rem;
+  margin: 0 auto; }
+  .row:not(:last-child) {
+    margin-bottom: 8rem; }
+  .row::after {
+    content: "";
+    display: table;
+    clear: both; }
+    .row::after [class^="col-"] {
+      float: left; }
+      .row::after [class^="col-"]:not(:last-child) {
+        margin-right: 6rem; }
+    .row::after .col-1-of-2 {
+      width: calc( (100% - 6rem) / 2); }
+    .row::after .col-1-of-3 {
+      width: calc((100% - 2 *6rem) / 3);
+      background-color: orang; }
+    .row::after .col-2-of-3 {
+      width: calc( 2 * ((100% - 2 *6rem) / 3) + 6rem); }
+    .row::after .col-1-of-4 {
+      width: calc((100% - 3 *6rem) / 4); }
+    .row::after .col-2-of-4 {
+      width: calc( 2 * ((100% - 3 *6rem) / 4) + 6rem); }
+    .row::after .col-3-of-4 {
+      width: calc( 3 * ((100% - 3 *6rem) / 4) + 2 * 6rem); }
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  box-sizing: border-box;
+  padding: 3rem; }
+
+body {
+  font-family: "Lato", sans-serif;
+  line-height: 1.5; }
+
+.heading-primary {
+  font-size: 5rem;
+  color: #323031ff;
+  text-align: center; }
+
+.heading-secondary {
+  font-size: 2.5rem;
+  color: #323031ff;
+  text-align: center; }
+
+.u-margin-bottom-small {
+  margin-bottom: 1rem !important; }
+
+.u-margin-bottom-big {
+  margin-bottom: 3rem !important; }
+
+.u-margin-top-big {
+  margin-top: 3rem !important; }
+
+.u-center-text {
+  text-align: center !important; }
+
+.section-authentification {
+  display: block;
+  padding: 8rem 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #e0e2db; }

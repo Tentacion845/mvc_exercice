@@ -1,0 +1,5 @@
+Options +FollowSymlinks
+RewriteEngine On
+#RewriteBase /
+RewriteRule ^/([a-zA-Z0-9]+)/([a-zA-Z0-9]+)$ index.php?controller=$1&action=$2 [L]
+RewriteRule ^/$ index.php [L]
